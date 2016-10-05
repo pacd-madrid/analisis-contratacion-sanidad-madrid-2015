@@ -1,0 +1,137 @@
+---
+title: "Contratatción Pública de la Consejería de Sanidad de Madrid 2015"
+author:  
+mode : selfcontained #{standalone, draft, selfcontained}
+framework: revealjs
+revealjs: {theme: white, transition: convex, center: "true"}
+ext_widgets: {rCharts: libraries/nvd3}
+knit        : slidify::knit2slides
+---
+
+```{r echo=F}
+require(knitr)
+opts_chunk$set(comment=NA, results='asis', tidy=F, message=F, cache=F, echo=F)
+options(RCHART_WIDTH=800, RCHART_HEIGHT=400, xtable.type='html')
+```
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+## El papel del sector privado en el Presupuesto de la Consejería de Sanidad de Madrid 2015
+
+<img src='assets/img/logo-audita-sanidad.jpg' alt='Logo Auditoría en Sanidad' width='200px'></p>
+
+<a href="http://auditasanidad.org/">http://auditasanidad.org/</a>
+
+
+--- &vertical
+
+<!-- ## Evolución de la deuda de la Comunidad de Madrid -->
+<!-- ```{r, results='asis'} -->
+<!-- require(htmlwidgets) -->
+<!-- require(dygraphs) -->
+<!-- datos <- read.csv("datos/evolucion-deuda-madrid.csv") -->
+<!-- deuda <- ts(datos$Deuda, start=c(2000, 1), end=c(2015, 1), frequency=1) -->
+<!-- dygraph(deuda, main = "") -->
+<!-- ``` -->
+
+<!-- *** -->
+
+<!-- ## Evolución de la deuda de la Comunidad de Madrid -->
+<!-- ```{r deuda_comunidad_madrid2} -->
+<!-- require(htmlwidgets) -->
+<!-- require(plotly) -->
+<!-- datos <- read.csv("datos/evolucion-deuda-madrid.csv") -->
+<!-- x <- list(title = "Año") -->
+<!-- y <- list(title = "Millones de €") -->
+<!-- p <- plot_ly(x = datos$Anio, y = datos$Deuda, name = "Deuda", type = "bar") %>% -->
+<!--   layout(xaxis = x, yaxis = y) -->
+<!-- p -->
+<!-- ``` -->
+
+<!-- *** -->
+
+## Evolución de la deuda de la Comunidad de Madrid
+```{r deuda-comunidad-madrid}
+require(rCharts)
+data <- read.table("datos/evolucion-deuda-madrid.csv", header = TRUE, sep=",")
+p1 <- nPlot(Deuda ~ Anio, data = data, type = "multiBarChart")
+p1$xAxis(axisLabel = 'Año')
+p1$yAxis(axisLabel = 'Gasto (Millones €)', width=100, tickFormat = "#! function(d) {return d/1000000 + 'M€' } !#")
+p1$chart(margin = list(left = 100))
+p1
+```
+
+<!-- *** -->
+
+<!-- ## Evolución de la deuda de la Comunidad de Madrid -->
+<!-- ```{r } -->
+<!-- require(htmlTable) -->
+<!-- colnames(data) <- c("Año", "Deuda") -->
+<!-- tmp <- htmlTable(data, align="lr", rnames=FALSE, css.class="colortable",  -->
+<!--   tfoot="<span class=\"footnote\">Fuente: Elaboración propia</span>") -->
+<!-- (tmp <- gsub('<td', '<td nowrap="nowrap"; ', tmp)) -->
+<!-- ``` -->
+
+---
+
+## Gasto en medios ajenos
+
+```{r gasto-medios-ajenos}
+require(rCharts)
+data <- read.table("datos/gasto-medios-ajenos.csv", header = TRUE, sep=",")
+p2 <- nPlot(Cantidad ~ Tipo.de.gasto, data = data, type = "pieChart")
+p2$chart(margin = list(left = 100))
+p2
+```
+
+---
+
+## Actividades realizadas con medios ajenos
+### 3.143.914.276 €
+
+```{r actividades-medios-ajenos}
+require(rCharts)
+data <- read.table("datos/actividades-medios-ajenos.csv", header = TRUE, sep=",")
+p3 <- nPlot(Cantidad ~ Actividad, data = data, type = "multiBarHorizontalChart")
+p3$yAxis(axisLabel = 'Cantidad (€)')
+p3$chart(margin = list(left = 350))
+p3
+```
+
+---
+
+## Importe de la contratación pública en 2015
+### 490.932.459 €
+
+```{r contratacion-publica-modalidad}
+require(rCharts)
+data <- read.table("datos/importe-contratos-modalidad.csv", header = TRUE, sep=",")
+data$Porcentaje = round((data$Cantidad/sum(data$Cantidad)) * 100,2)
+p4 <- nPlot(Cantidad ~ Modalidad.contrato, data = data, type = "pieChart")
+p4$chart(tooltipContent = "#! function(key, y, e, graph){return '<h3>' + 'Modalidad: ' + key + '</h3>' + '<p>'+ 'Cantidad: ' + y + '<br>' + e.point.Porcentaje + ' %'} !#")
+#p4$chart(donut=TRUE)
+#p4$chart(margin = list(left = 350))
+p4
+```
+
+---
+
+
+## Evolución de la venta de genéricos vs medicamentos innovadores
+
+```{r evolucion-ventas-genericos}
+require(rCharts)
+data <- read.table("datos/evolucion-ventas-genericos.csv", header = TRUE, sep=",")
+p <- nPlot(Porcentaje.Gasto~ Año, group="Tipo", data = data, type = "lineChart")
+p$xAxis(axisLabel = 'Año')
+p$yAxis(axisLabel = 'Porcentaje de gasto', tickFormat = "#! function(d) {return d + '%' } !#")
+p$chart(margin = list(left = 100), color=c("blue","red"))
+p
+```
+
+---
+
+## ¡Gracias por su atención!
+
+<img src="assets/img/nodebemos_nopagamos.jpg" alt="No debemos, no pagamos">
+
