@@ -164,7 +164,7 @@ p4
 ```{r ranking-empresas-adjudicatarias}
 require(rCharts)
 data <- read.table("datos/ranking-empresas.csv", header = TRUE, sep=",")
-p <- nPlot(Cantidad ~ Empresa, group="Tipo", data = data, type = "multiBarHorizontalChart")
+p <- nPlot(Cantidad ~ Empresa, data = data, type = "multiBarHorizontalChart")
 p$yAxis(axisLabel = 'Cantidad (€)')
 p$chart(margin = list(left = 350))
 #p$chart(showControls = F)

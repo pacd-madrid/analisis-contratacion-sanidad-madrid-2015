@@ -87,7 +87,7 @@ No se han considerado:
 <!-- *** -->
 
 ## Evolución de la deuda de la Comunidad de Madrid
-<iframe src=' figure/deuda-comunidad-madrid-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart21ac4fff741c ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' figure/deuda-comunidad-madrid-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart2334b172660 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <!-- *** -->
 
@@ -105,34 +105,34 @@ No se han considerado:
 ## Gasto en medios ajenos
 #### Presupuestos Consejería Sanidad de Madrid 2015 (3.143.914.276 €)
 
-<iframe src=' figure/gasto-medios-ajenos-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart21ac27f840c4 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' figure/gasto-medios-ajenos-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart233423c0481f ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ---
 
 ## Actividades realizadas con medios ajenos
 #### Presupuestos Consejería Sanidad de Madrid 2015
 
-<iframe src=' figure/actividades-medios-ajenos-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart21ac2f1ab781 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' figure/actividades-medios-ajenos-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart2334777e33bd ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ---
 
 ## Contratación pública en 2015
 ### 1.295 contratos por valor de 490.932.459 €
 
-<iframe src=' figure/contratacion-publica-modalidad-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart21ac510367b8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' figure/contratacion-publica-modalidad-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart23341f9310fd ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 --- &vertical
 
 ## Ranking de empresas adjudicatarias 
 
-<iframe src=' figure/ranking-empresas-adjudicatarias-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart21ac8af9af1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' figure/ranking-empresas-adjudicatarias-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart23345a1f9d62 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ***
 
 ## Ranking de empresas adjudicatarias 
 ## Top 10
 
-<iframe src=' figure/ranking-empresas-adjudicatarias-top-10-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart21ac47b37feb ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' figure/ranking-empresas-adjudicatarias-top-10-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart233468becbfc ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ---
 
@@ -176,7 +176,7 @@ No se han considerado:
 
 ## Ranking lobbies adjudicatarios 
 
-<iframe src=' figure/ranking-lobbies-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart21ac6351070c ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' figure/ranking-lobbies-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart23342dccb158 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 --- 
 
