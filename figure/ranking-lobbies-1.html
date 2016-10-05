@@ -22,46 +22,81 @@
   </head>
   <body >
     
-    <div id = 'chart21ac510367b8' class = 'rChart nvd3'></div>    
+    <div id = 'chart21ac6351070c' class = 'rChart nvd3'></div>    
     <script type='text/javascript'>
  $(document).ready(function(){
-      drawchart21ac510367b8()
+      drawchart21ac6351070c()
     });
-    function drawchart21ac510367b8(){  
+    function drawchart21ac6351070c(){  
       var opts = {
- "dom": "chart21ac510367b8",
+ "dom": "chart21ac6351070c",
 "width":    800,
 "height":    400,
-"x": "Modalidad.contrato",
+"x": "Lobby",
 "y": "Cantidad",
-"type": "pieChart",
-"id": "chart21ac510367b8" 
+"type": "multiBarHorizontalChart",
+"id": "chart21ac6351070c" 
 },
         data = [
  {
- "Modalidad.contrato": "Suministros",
-"Cantidad":   370321302.35,
-"Porcentaje":          75.43 
+ "Lobby": "Fundación IDIS",
+"Cantidad":    253644712.9,
+"Porcentaje": "84.7%" 
 },
 {
- "Modalidad.contrato": "Servicios",
-"Cantidad":   102338204.63,
-"Porcentaje":          20.85 
+ "Lobby": "FARMAINDUSTRIA",
+"Cantidad":   193920759.96,
+"Porcentaje": "64.75%" 
 },
 {
- "Modalidad.contrato": "Gestión de Servicios Públicos",
-"Cantidad":    13987061.56,
-"Porcentaje":           2.85 
+ "Lobby": "FENIN",
+"Cantidad":   146973233.34,
+"Porcentaje": "49.08%" 
 },
 {
- "Modalidad.contrato": "Administrativos Especiales",
-"Cantidad":      3207770.5,
-"Porcentaje":           0.65 
+ "Lobby": "SEDISA",
+"Cantidad":   110189867.45,
+"Porcentaje": "36.79%" 
 },
 {
- "Modalidad.contrato": "Obras",
-"Cantidad":     1078120.26,
-"Porcentaje":           0.22 
+ "Lobby": "Fundación ECO",
+"Cantidad":   104941604.64,
+"Porcentaje": "35.04%" 
+},
+{
+ "Lobby": "FUINSA",
+"Cantidad":    100361715.6,
+"Porcentaje": "33.51%" 
+},
+{
+ "Lobby": "ASEBIO",
+"Cantidad":    92196412.74,
+"Porcentaje": "30.79%" 
+},
+{
+ "Lobby": "CLUB GERTECH",
+"Cantidad":    41377005.51,
+"Porcentaje": "13.82%" 
+},
+{
+ "Lobby": "AESMIDE",
+"Cantidad":    11334916.07,
+"Porcentaje": "3.78%" 
+},
+{
+ "Lobby": "AESEG ",
+"Cantidad":     7088824.02,
+"Porcentaje": "2.37%" 
+},
+{
+ "Lobby": "FNCP o CNCHP",
+"Cantidad":      1021368.7,
+"Porcentaje": "0.34%" 
+},
+{
+ "Lobby": "MADRID NETWORK",
+"Cantidad":      138603.92,
+"Porcentaje": "0.05%" 
 } 
 ]
   
@@ -94,13 +129,16 @@
           
          
         chart
-  .tooltipContent( function(key, y, e, graph){return '<h3>' + 'Modalidad: ' + key + '</h3>' + '<p>'+ 'Cantidad: ' + y + '<br>' + e.point.Porcentaje + ' %'} )
+  .margin({
+ "left":    350 
+})
           
         
 
         
         
-        
+        chart.yAxis
+  .axisLabel("Cantidad (€)")
       
        d3.select("#" + opts.id)
         .append('svg')
@@ -114,6 +152,6 @@
     };
 </script>
     
-    <style> svg text {font-size: 18px;}</style>    
+    <script></script>    
   </body>
 </html>

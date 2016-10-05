@@ -1,0 +1,248 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css'>
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js' type='text/javascript'></script>
+    <script src='//nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart21ac8af9af1' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart21ac8af9af1()
+    });
+    function drawchart21ac8af9af1(){  
+      var opts = {
+ "dom": "chart21ac8af9af1",
+"width":    800,
+"height":    400,
+"x": "Empresa",
+"y": "Cantidad",
+"group": "Tipo",
+"type": "multiBarHorizontalChart",
+"id": "chart21ac8af9af1" 
+},
+        data = [
+ {
+ "Empresa": "UTE GAS NATURAL SERVICIOS SDG-DALKIA ENERGIA SAU",
+"Cantidad":       36322498,
+"Porcentaje": "7.40%",
+"Tipo": "Energía" 
+},
+{
+ "Empresa": "ROCHE FARMA SA-ROCHE DIAGNOSTICS SL",
+"Cantidad":    31202812.64,
+"Porcentaje": "6.36%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "NOVARTIS VACCINES AND DIAGNOSTICS SL-NOVARTIS FARMACEUTICA SA",
+"Cantidad":    28164489.87,
+"Porcentaje": "5.74%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "PFIZER SLU-PFIZER GEP SLU",
+"Cantidad":     22295753.2,
+"Porcentaje": "4.54%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "GILEAD SCIENCES SL",
+"Cantidad":    21347852.91,
+"Porcentaje": "4.35%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "CERNER IBERIA SL",
+"Cantidad":    20915002.24,
+"Porcentaje": "4.26%",
+"Tipo": "Informática" 
+},
+{
+ "Empresa": "JOHNSON & JOHNSON SA-JANSSEN CILAG SA",
+"Cantidad":    18113783.49,
+"Porcentaje": "3.69%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "SANOFI PASTEUR MSD-SANOFI AVENTIS SA",
+"Cantidad":    15641613.65,
+"Porcentaje": "3.19%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "GLAXOSMITHKLINE SA",
+"Cantidad":    14950213.63,
+"Porcentaje": "3.05%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "SIEMENS SA-SIEMENS HEALTHCARE DIAGNOSTICS SL",
+"Cantidad":    13324416.42,
+"Porcentaje": "2.71%",
+"Tipo": "Tecnología" 
+},
+{
+ "Empresa": "ZURICH INSURANCE PLC SUCURSAL EN ESPAÑA",
+"Cantidad":       10750000,
+"Porcentaje": "2.19%",
+"Tipo": "Seguros" 
+},
+{
+ "Empresa": "LABORATORIOS VIIV HEALTHCARE SL",
+"Cantidad":        7698365,
+"Porcentaje": "1.57%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "MERCK SHARP & DOHME DE ESPAÑA SA",
+"Cantidad":     7649426.63,
+"Porcentaje": "1.56%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "FRESENIUS MEDICAL CARE ESPAÑA SA-FRESENIUS KABI ESPAÑA SA",
+"Cantidad":     6649160.89,
+"Porcentaje": "1.35%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "LABORATORIOS BAXTER SL-BAXTER SL",
+"Cantidad":     6602878.17,
+"Porcentaje": "1.34%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "CONSENUR SL",
+"Cantidad":        6436951,
+"Porcentaje": "1.31%",
+"Tipo": "Residuos" 
+},
+{
+ "Empresa": "ITURRI SA",
+"Cantidad":     5759828.09,
+"Porcentaje": "1.17%",
+"Tipo": "Otras" 
+},
+{
+ "Empresa": "MEDTRONIC IBERICA SA-COVIDIEN SPAIN SL",
+"Cantidad":     5601548.76,
+"Porcentaje": "1.14%",
+"Tipo": "Otras" 
+},
+{
+ "Empresa": "CELGENE SL",
+"Cantidad":        5512352,
+"Porcentaje": "1.12%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "ACTELION PHARMACEUTICALS SAU",
+"Cantidad":        5361657,
+"Porcentaje": "1.09%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "SEVERIANO SERVICIO MOVIL SA",
+"Cantidad":     5320255.56,
+"Porcentaje": "1.08%",
+"Tipo": "Otras" 
+},
+{
+ "Empresa": "GE HEALTHCARE ESPAÑA SA-GE HEALTHCARE BIOSCIENCE SA",
+"Cantidad":     4965347.32,
+"Porcentaje": "1.01%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "BRISTOL-MYERS SQUIBB SA",
+"Cantidad":     4898231.24,
+"Porcentaje": "1.00%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "BIOGEN SPAIN SL-BIOGEN IDEC IBERICA SL-BIOGEN DIAGNOSTICA SL",
+"Cantidad":        4858871,
+"Porcentaje": "0.99%",
+"Tipo": "Farmaceútica" 
+},
+{
+ "Empresa": "OCTAPHARMA SA",
+"Cantidad":        4819042,
+"Porcentaje": "0.98%",
+"Tipo": "Farmaceútica" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .margin({
+ "left":    350 
+})
+          
+        
+
+        
+        
+        chart.yAxis
+  .axisLabel("Cantidad (€)")
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
